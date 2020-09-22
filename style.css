@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  background: #666666;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  display: flex;
+}
+
+.card .top,
+.card .bottom {
+  height: 400px;
+  width: 400px;
+}
+
+.card .top.top1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  transition: 0.5s;
+  z-index: 1;
+  transform: translateX(200px);
+  background: #ffffff;
+  box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover .top.top1 {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background: #ffffff;
+}
+
+.card .top.top1 .content .square{
+  content: '';
+  height: 150px;
+  width: 150px;
+  background-color: #000000;
+  transition: 0.5s;
+}
+
+.card:hover .top.top1 .content .square{
+  height: 200px;
+  width: 200px;
+  transition: 0.5s;
+}
+
+.card .bottom.bottom1 {
+  position: relative;
+  padding: 20px;
+  border-radius: 25px;
+  transition: 0.5s;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  transform: translateX(-200px);
+}
+
+.card:hover .bottom.bottom1 {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: 0.5s;
+  transform: translateX(200px);
+  box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.card .bottom.bottom1 .content h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.card .bottom.bottom1 .content p {
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 16px;
+  display: block;
+}
+
+.card .bottom.bottom1 .content a {
+  padding: 15px;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  float: right;
+  font-weight: 600;
+  border-radius: 45px;
+  background: #000000;
+}
+
+.card .bottom.bottom1 .content a:hover { 
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+}
